@@ -10,7 +10,7 @@
 ## GIỚI THIỆU MÔN HỌC
 * **Tên môn học:** Cấu trúc dữ liệu và giải thuật nâng cao
 * **Mã môn học:** CS523
-* **Mã lớp:** CS523.P22
+* **Mã lớp:** CS523.P21
 * **Giảng viên**: Ths.Nguyễn Thanh Sơn
 
 ## THÀNH VIÊN NHÓM
