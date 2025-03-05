@@ -17,6 +17,7 @@
 |STT| MSSV      | Họ và Tên       |Chức Vụ    | Github                                                  | Email                   |
 |---|:---------:| ---------------:|----------:|--------------------------------------------------------:|-------------------------:
 | 1 | 23521704  | Trần Thị Cẩm Tú |Nhóm trưởng|  |23521704@gm.uit.edu.vn   |
+| 1 | 23521821  | Mai Lê Bá Vương |Thành viên|  |23521821@gm.uit.edu.vn   |
 
 ## ĐỒ ÁN
 <h2 align="center"><b>TREAP VISUALIZATION</b></h>
