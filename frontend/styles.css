@@ -1,21 +1,111 @@
+/* --- Toàn bộ nền và font chữ chung --- */
+
+
+
+/* Tùy chỉnh hiệu ứng hover khi người dùng di chuột vào logo */
+.header-container .logo:hover {
+    opacity: 0.8; /* Hiệu ứng mờ dần khi hover */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    background: linear-gradient(25deg, #96d7f4, #f2f6fa 50%);
+    font-family: Verdana;
+    
+}
+
+/* --- Vùng container chính --- */
+.container {
     text-align: center;
+    font-family: Verdana;
+    padding: 20px;
 }
-.controls {
-    margin-bottom: 20px;
+
+/* --- Các input nhập key & priority --- */
+input {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    border: 1px solid #ccc;
 }
+
+/* --- Nút bấm --- */
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    background-color: #e0f7ff;
+    border: 1px solid #79d2ed;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #79d2ed;
+    color: white;
+}
+.controls select {
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Verdana;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/* --- SVG nơi hiển thị cây Treap --- */
 svg {
-    border: 1px solid black;
+    border: 1px solid rgb(117, 201, 240);
     width: 100%;
-    height: 500px;
+    height: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
+
+/* --- Cấu trúc cây: node cha con vẽ bằng D3 --- */
 .node circle {
     fill: lightblue;
     stroke: black;
     stroke-width: 2px;
+    width:  200px;
+    height: 200px;
 }
+
 .node text {
     font-size: 14px;
     font-weight: bold;
+    font-family: Verdana;
+}
+
+/* --- Layout dạng hàng ngang, nếu cần --- */
+.treap-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* --- Node dạng khối dùng trong layout flex (nếu có) --- */
+.node {
+    background-color: lightblue;
+    padding: 100px;
+    border-radius: 5px;
+    
+}
+
+/* --- Cấu trúc bổ sung --- */
+.controls {
+    margin-bottom: 20px;
+    font-family: Verdana;
+}
+
+.structure {
+    font-family: Verdana;
+    border-radius: 8px;
 }

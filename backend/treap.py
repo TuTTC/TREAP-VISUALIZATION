@@ -36,6 +36,20 @@ class Treap:
             if root.right.priority > root.priority:
                 root = self.rotate_left(root)
         return root
+    
+    def insert_min(self, root, key, priority):
+        if not root:
+            return TreapNode(key, priority)
+
+        if key < root.key:
+            root.left = self.insert(root.left, key, priority)
+            if root.left.priority < root.priority:
+                root = self.rotate_right(root)
+        else:
+            root.right = self.insert(root.right, key, priority)
+            if root.right.priority < root.priority:
+                root = self.rotate_left(root)
+        return root
 
     def delete(self, root, key):
         if root is None:
@@ -74,6 +88,9 @@ class Treap:
     
     def insert_node(self, key, priority=None):
         self.root = self.insert(self.root, key, priority)
+
+    def insert_node_min(self, key, priority=None):
+        self.root = self.insert_min(self.root, key, priority)
 
     def delete_node(self, key):
         self.root = self.delete(self.root, key)

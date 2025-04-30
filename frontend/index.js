@@ -4,7 +4,7 @@ function drawTreap(data) {
 
     const width = 800;
     const height = 500;
-    const nodeRadius = 20;
+    const nodeRadius = 30;
 
     const treapGroup = svg.append("g").attr("transform", "translate(50, 50)");
 
@@ -37,11 +37,54 @@ function drawTreap(data) {
         .attr("class", "node")
         .attr("transform", d => `translate(${d.x}, ${d.y})`);
 
-    nodes.append("circle")
-        .attr("r", nodeRadius);
+        nodes.each(function (d) {
+            const g = d3.select(this);
+            const r = nodeRadius;
+        
+            // Nửa trên: trắng
+            g.append("path")
+                .attr("d", `M 0 0 L ${-r} 0 A ${r} ${r} 0 0 0 ${r} 0 Z`)
+                .attr("fill", "white")
+                .attr("stroke", "black")
+                .attr("stroke-width", 1);
 
-    nodes.append("text")
-        .attr("dy", 5)
-        .attr("text-anchor", "middle")
-        .text(d => d.data.name);
+        
+            // Nửa dưới: lightblue
+            g.append("path")
+                .attr("d", `M 0 0 L ${r} 0 A ${r} ${r} 0 0 0 ${-r} 0 Z`)
+                .attr("fill", "lightblue")
+                .attr("stroke", "black")
+                .attr("stroke-width", 1);
+        
+            // Đường phân cách ngang
+            // g.append("line")
+            //     .attr("x1", -r)
+            //     //.attr("y1", 0)
+            //     .attr("x2", r)
+            //     //.attr("y2", 0)
+            //     .attr("stroke", "black")
+            //     .attr("stroke-width", 1);
+        
+            // Tách key và priority từ chuỗi "key (P: priority)"
+            const [key, pRaw] = d.data.name.split(" (P: ");
+            const priority = pRaw.replace(")", "");
+        
+            // Text key
+            g.append("text")
+                .attr("x", 0)
+                .attr("y", -10)
+                .attr("text-anchor", "middle")
+                .attr("font-family", "Verdana" )
+                .attr("font-size", "10px")
+                .text(key);
+        
+            // Text priority
+            g.append("text")
+                .attr("x", 0)
+                .attr("y", 18)
+                .attr("text-anchor", "middle")
+                .attr("font-family", "Verdana" )
+                .attr("font-size", "10px")
+                .text("P: " + priority);
+            });
 }

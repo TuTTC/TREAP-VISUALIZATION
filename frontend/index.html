@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treap Visualization</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="header2.png" alt="Treap Visualization Logo" class="logo">
+            </a>
+        </div>
+    </header> -->
     <h1>Treap Visualization</h1>
     <div class="controls">
         <input type="number" id="key" placeholder="Key">
         <input type="number" id="priority" placeholder="Priority (Optional)">
+        <select id="heapType">
+            <option value="max">Max Heap</option>
+            <option value="min">Min Heap</option>
+        </select>
         <button onclick="insertNode()">Insert</button>
         <button onclick="searchNode()">Search</button>
         <button onclick="deleteNode()">Delete</button>
+        <button onclick="generateRandomTreap()">Generate Random Treap</button>
+        <button onclick="generateNewTreap()">Generate New Treap</button> <!-- Thêm nút tạo cây mới -->
+        <button onclick="mergeTreaps()">Merge Treaps</button> <!-- Nút hợp nhất -->
+        <button onclick="splitTreap()">Split Treap</button> <!-- Nút split -->
     </div>
     <svg id="treap-svg" width="800" height="500"></svg>
     <script src="api.js"></script>

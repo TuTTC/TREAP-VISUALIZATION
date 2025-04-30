@@ -1,19 +1,52 @@
 .container {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: Verdana;
+    padding: 20px;
 }
 
+/* --- Các input nhập key & priority --- */
 input {
     margin: 5px;
     padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    border: 1px solid #ccc;
 }
 
+
+/* --- Nút bấm --- */
 button {
-    padding: 8px;
+    padding: 8px 12px;
     margin-left: 5px;
     cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    background-color: #e0f7ff;
+    border: 1px solid #79d2ed;
+    transition: background-color 0.3s ease;
 }
 
+button:hover {
+    background-color: #79d2ed;
+    color: white;
+}
+
+
+.node circle {
+    fill: lightblue;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.node text {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+/* --- Layout dạng hàng ngang, nếu cần --- */
 .treap-container {
     margin-top: 20px;
     display: flex;
@@ -21,8 +54,10 @@ button {
     gap: 10px;
 }
 
+/* --- Node dạng khối dùng trong layout flex (nếu có) --- */
 .node {
     background-color: lightblue;
     padding: 10px;
     border-radius: 5px;
 }
+
