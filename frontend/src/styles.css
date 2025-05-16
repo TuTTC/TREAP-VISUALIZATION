@@ -1,28 +1,156 @@
-.container {
+/* General styles */
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: Sohne;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  h1 {
     text-align: center;
-    font-family: Arial, sans-serif;
+    color: #333;
+    font-family: "Festive";
+  }
+  
+  /* Container for the Treap visualizer */
+  .treap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* button {
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  } */
+  
+  /* Style for the tree visualization */
+  pre {
+    font-size: 16px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  
+  /* styles.css */
+
+/* 1. Cho SVG co giãn theo chiều ngang */
+svg {
+    border: 1px solid rgb(117, 201, 240);
+    width: 100%;
+    height: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
+/* 2. Nếu muốn thêm scroll khi zoom quá to */
+.container {
+  width: 100%;             /* hoặc một kích thước cố định, ví dụ 1000px */
+  height: 600px;           /* giữ đúng chiều cao bạn muốn */
+  overflow: auto;          /* bật thanh cuộn khi nội dung vượt khung */
+}
+
+/* 3. Tùy chỉnh vùng controls */
+.controls {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.controls input {
+  width: 120px;
+  padding: 4px;
+}
+
+.controls button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    font-family: Verdana;
+    padding: 20px;
+}
+
+/* --- Các input nhập key & priority --- */
 input {
     margin: 5px;
     padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    border: 1px solid #ccc;
 }
 
+
+/* --- Nút bấm --- */
 button {
-    padding: 8px;
+    padding: 8px 12px;
     margin-left: 5px;
     cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    background-color: #e0f7ff;
+    border: 1px solid #79d2ed;
+    transition: background-color 0.3s ease;
 }
 
-.treap-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+button:hover {
+    background-color: #79d2ed;
+    color: white;
 }
 
+
+.node circle {
+    fill: lightblue;
+    stroke: lightblue;
+    stroke-width: 2px;
+}
+
+.node text {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+
+
+/* --- Node dạng khối dùng trong layout flex (nếu có) --- */
 .node {
     background-color: lightblue;
     padding: 10px;
     border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
 }
