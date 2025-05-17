@@ -5,10 +5,10 @@
   </a>
 </p>
 
-<h1 align="center"><b>CẤU TRÚC DỮ LIỆU VÀ GIẢI THUẬT</b></h>
+<h1 align="center"><b>CẤU TRÚC DỮ LIỆU VÀ GIẢI THUẬT NÂNG CAO</b></h>
 
 ## GIỚI THIỆU MÔN HỌC
-* **Tên môn học:** Cấu trúc dữ liệu và giải thích
+* **Tên môn học:** Cấu trúc dữ liệu và giải thuật nâng cao
 * **Mã môn học:** CS523
 * **Mã lớp:** CS523.P21
 * **Giảng viên**: Ths.Nguyễn Thanh Sơn
@@ -22,4 +22,4 @@
 ## ĐỒ ÁN
 <h2 align="center"><b>TREAP VISUALIZATION</b></h>
 <h3>Introduction</h3>
-<p></p>
+<p>https://drive.google.com/drive/folders/1INXd2suRIycvj_SAZc-AVa8iy2MFhU-I?usp=sharing</p>
