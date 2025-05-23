@@ -5,10 +5,10 @@
   </a>
 </p>
 
-<h1 align="center"><b>CẤU TRÚC DỮ LIỆU VÀ GIẢI THUẬT</b></h>
+<h1 align="center"><b>CẤU TRÚC DỮ LIỆU VÀ GIẢI THUẬT NÂNG CAO</b></h>
 
 ## GIỚI THIỆU MÔN HỌC
-* **Tên môn học:** Cấu trúc dữ liệu và giải thích
+* **Tên môn học:** Cấu trúc dữ liệu và giải thuật nâng cao
 * **Mã môn học:** CS523
 * **Mã lớp:** CS523.P21
 * **Giảng viên**: Ths.Nguyễn Thanh Sơn

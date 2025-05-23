@@ -96,8 +96,11 @@ svg {
     text-align: center;
     font-family: Verdana;
     padding: 20px;
+    font-family: Verdana;
+    padding: 20px;
 }
 
+/* --- Các input nhập key & priority --- */
 /* --- Các input nhập key & priority --- */
 input {
     margin: 5px;
@@ -106,11 +109,18 @@ input {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     font-family: Verdana;
     border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Verdana;
+    border: 1px solid #ccc;
 }
 
 
 /* --- Nút bấm --- */
+
+/* --- Nút bấm --- */
 button {
+    padding: 8px 12px;
     padding: 8px 12px;
     margin-left: 5px;
     cursor: pointer;
