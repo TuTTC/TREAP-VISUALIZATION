@@ -22,4 +22,10 @@
 ## ĐỒ ÁN
 <h2 align="center"><b>TREAP VISUALIZATION</b></h>
 <h3>Introduction</h3>
-<p></p>
+<p>Cây Treap là một cấu trúc dữ liệu kết hợp giữa Binary Search Tree (BST) và Heap. Treap có hai đặc tính chính:</p>
+<p>- Tính chất BST theo khóa (key): nút bên trái nhỏ hơn, nút bên phải lớn hơn.</p>
+<p>- Tính chất Heap theo ưu tiên (priority): mỗi nút có một giá trị ưu tiên ngẫu nhiên, nút cha luôn có ưu tiên cao hơn con</p>
+<p>Trong đồ án này, nhóm chúng em xây dựng một ứng dụng trực quan hóa Treap. Ứng dụng được phát triển với ReactJS ở phía frontend kết hợp với D3.js để hiển thị cây trực quan, và có thể kết nối với backend bằng Flask để xử lý logic cây Treap.</p>
+
+<p>Đây là lần đầu tiên chúng em sử dụng các công cụ và framework kể trên để phát triển một sản phẩm với mục đích học tập và làm quen công nghệ. Mọi thiếu sót trong quá trình thực hiện, chúng em xin được tiếp thu và cải tiến trong tương lai.</p>
+<p>Link: https://drive.google.com/drive/folders/1INXd2suRIycvj_SAZc-AVa8iy2MFhU-I?usp=sharing</p>
