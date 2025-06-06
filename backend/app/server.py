@@ -75,20 +75,7 @@ def node_to_dict(node):
         "left": node_to_dict(node.left),
         "right": node_to_dict(node.right)
     }
-# API to delete a node
-# @app.route("/delete", methods=["POST"])
-# def delete():
-#     global treap
-#     data = request.get_json() or {}
-#     key = data.get("key")
-#     if key is None:
-#         return make_response_json(error="Missing key for deletion", code=400)
 
-#     try:
-#         treap.delete_node(key)
-#         return make_response_json(data=treap.get_tree())
-#     except ValueError as e:
-#         return make_response_json(error=str(e), code=400)
 
 @app.route("/delete", methods=["POST"])
 def delete():

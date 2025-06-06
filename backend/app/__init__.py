@@ -7,8 +7,7 @@ def create_app():
     # Bật CORS cho phép frontend truy cập backend
     CORS(app)
 
-    # Cấu hình hoặc khởi tạo các phần khác của ứng dụng ở đây
-    # Ví dụ: app.config.from_object(Config)
+    
     
     # Import routes hoặc API views
     from . import server
